@@ -1,0 +1,6 @@
+/* ******* desktop ******************** */
+@media screen and (max-width: 767px) {
+  .fs-sm {
+    font-size: 48px;
+  }
+}

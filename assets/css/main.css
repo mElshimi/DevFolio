@@ -1,0 +1,728 @@
+@font-face {
+  font-family: "Moon Dance";
+  src: url(../fonts/MoonDance-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/);
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+
+/* **************navbar************** */
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  width: 0;
+  bottom: 0;
+  left: 10%;
+  transition: all .3s;
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.dropdown-item:hover {
+  color: #000 !important;
+}
+
+
+/* **************home caption************** */
+.home-caption {
+  background-image: url(../imgs/hero-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.animated-text {
+  font-size: 72px;
+  position: relative;
+}
+
+.animated-text:after {
+  content: "";
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  font-size: 40px;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes typing {
+
+  0% {
+    content: "|";
+  }
+
+  1% {
+    content: "D|";
+  }
+
+  2% {
+    content: "De|";
+  }
+
+  3% {
+    content: "Des|";
+  }
+
+  4% {
+    content: "Desi|";
+  }
+
+  5% {
+    content: "Desig|";
+  }
+
+  6% {
+    content: "Design|";
+  }
+
+  7% {
+    content: "Designe|";
+  }
+
+  8% {
+    content: "Designer|";
+  }
+
+  9% {
+    content: "Designer|";
+  }
+
+  10% {
+    content: "Designer|";
+  }
+
+  11% {
+    content: "Designer|";
+  }
+
+  12% {
+    content: "Designe|";
+  }
+
+  13% {
+    content: "Design|";
+  }
+
+  14% {
+    content: "Desig|";
+  }
+
+  15% {
+    content: "Desi|";
+  }
+
+  16% {
+    content: "Des|";
+  }
+
+  17% {
+    content: "De|";
+  }
+
+  18% {
+    content: "Dev|";
+  }
+
+  19% {
+    content: "Deve|";
+  }
+
+  20% {
+    content: "Devel|";
+  }
+
+  21% {
+    content: "Develo|";
+  }
+
+  21% {
+    content: "Develop|";
+  }
+
+  22% {
+    content: "Develope|";
+  }
+
+  23% {
+    content: "Developer|";
+  }
+
+  24% {
+    content: "Developer|";
+  }
+
+  25% {
+    content: "Developer|";
+  }
+
+  26% {
+    content: "Developer|";
+  }
+
+  27% {
+    content: "Developer|";
+  }
+
+  28% {
+    content: "Develope|";
+  }
+
+  29% {
+    content: "Develop|";
+  }
+
+  30% {
+    content: "Develo|";
+  }
+
+  31% {
+    content: "Devel|";
+  }
+
+  32% {
+    content: "Deve|";
+  }
+
+  33% {
+    content: "Dev|";
+  }
+
+  34% {
+    content: "De|";
+  }
+
+  35% {
+    content: "D|";
+  }
+
+  36% {
+    content: "|";
+  }
+
+  37% {
+    content: "F|";
+  }
+
+  38% {
+    content: "Fr|";
+  }
+
+  39% {
+    content: "Fre|";
+  }
+
+  40% {
+    content: "Free|";
+  }
+
+  41% {
+    content: "Freel|";
+  }
+
+  42% {
+    content: "Freela|";
+  }
+
+  43% {
+    content: "Freelan|";
+  }
+
+  44% {
+    content: "Freelanc|";
+  }
+
+  45% {
+    content: "Freelance|";
+  }
+
+  46% {
+    content: "Freelancer|";
+  }
+
+  47% {
+    content: "Freelancer|";
+  }
+
+  48% {
+    content: "Freelancer|";
+  }
+
+  49% {
+    content: "Freelancer|";
+  }
+
+  50% {
+    content: "Freelance|";
+  }
+
+  51% {
+    content: "Freelanc|";
+  }
+
+  52% {
+    content: "Freelan|";
+  }
+
+  53% {
+    content: "Freela|";
+  }
+
+  54% {
+    content: "Freel|";
+  }
+
+  55% {
+    content: "Free|";
+  }
+
+  56% {
+    content: "Fre|";
+  }
+
+  57% {
+    content: "Fr|";
+  }
+
+  58% {
+    content: "F|";
+  }
+
+  59% {
+    content: "|";
+  }
+
+  60% {
+    content: "P|";
+  }
+
+  61% {
+    content: "Ph|";
+  }
+
+  62% {
+    content: "Pho|";
+  }
+
+  63% {
+    content: "Phot|";
+  }
+
+  64% {
+    content: "Photo|";
+  }
+
+  65% {
+    content: "Photog|";
+  }
+
+  66% {
+    content: "Photogr|";
+  }
+
+  67% {
+    content: "Photogra|";
+  }
+
+  68% {
+    content: "Photograp|";
+  }
+
+  69% {
+    content: "Photograph|";
+  }
+
+  70% {
+    content: "Photographe|";
+  }
+
+  71% {
+    content: "Photographer|";
+  }
+
+  72% {
+    content: "Photographer|";
+  }
+
+  73% {
+    content: "Photographer|";
+  }
+
+  74% {
+    content: "Photographer|";
+  }
+
+  75% {
+    content: "Photographe|";
+  }
+
+  76% {
+    content: "Photograph|";
+  }
+
+  77% {
+    content: "Photograp|";
+  }
+
+  78% {
+    content: "Photogra|";
+  }
+
+  79% {
+    content: "Photogr|";
+  }
+
+  80% {
+    content: "Photog|";
+  }
+
+  81% {
+    content: "Photo|";
+  }
+
+  82% {
+    content: "Phot|";
+  }
+
+  84% {
+    content: "Pho|";
+  }
+
+  85% {
+    content: "Ph|";
+  }
+
+  86% {
+    content: "P|";
+  }
+
+  87% {
+    content: "|";
+  }
+
+  88% {
+    content: "R|";
+  }
+
+  89% {
+    content: "Ro|";
+  }
+
+  90% {
+    content: "Rou|";
+  }
+
+  91% {
+    content: "Rout|";
+  }
+
+  92% {
+    content: "Route|";
+  }
+
+  93% {
+    content: "Route|";
+  }
+
+  94% {
+    content: "Route|";
+  }
+
+  95% {
+    content: "Route|";
+  }
+
+  96% {
+    content: "Rout|";
+  }
+
+  97% {
+    content: "Rou|";
+  }
+
+  98% {
+    content: "Ro|";
+  }
+
+  99% {
+    content: "R|";
+  }
+
+  100% {
+    content: "|";
+  }
+}
+
+/* ****************about****************** */
+
+.progress {
+  border-radius: 0;
+  height: 12px;
+}
+
+.about-me h2::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+  left: 0;
+}
+
+.about-me p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.skills p {
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* ********************services********************** */
+.title h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.title p {
+  position: relative;
+}
+
+.title p::after {
+  content: "";
+  position: absolute;
+  background-color: #0078ff;
+  width: 40px;
+  height: 5px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 65px 0;
+  margin-bottom: 48px !important;
+}
+
+.service i {
+  border: solid 12px #0078ff;
+  border-radius: 50%;
+  padding: 20px 30px;
+  transition: all .5s;
+}
+
+.service:hover i {
+  border-color: #cde1f8;
+  background-color: #0078ff;
+  color: #fff;
+}
+
+/* ***************some-info************** */
+.some-info {
+  background-image: url(../imgs/counters-bg.jpg);
+  background-attachment: fixed;
+}
+
+.some-info .layer {
+  background-color: rgb(0, 120, 255, 0.6);
+}
+
+.info i {
+  border: solid 12px #cde1f8;
+  color: #cde1f8;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+/* *****************work*************** */
+.work {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 48px !important;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-img img:hover {
+  transform: scale(1.3);
+}
+
+.work-info h2 {
+  font-size: 1.25rem;
+}
+
+.work-info p {
+  font-size: .8rem;
+}
+
+/* ************testimonials************* */
+.testimonials {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-attachment: fixed;
+}
+
+.testimonials .layer {
+  background-color: rgb(0, 120, 255, 0.6);
+}
+
+.ci-btn {
+  height: 12px !important;
+  width: 12px !important;
+  background-color: #fff !important;
+  border-radius: 50%;
+}
+
+/* ************blogs************* */
+.blog {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 48px !important;
+}
+
+.blog-img {
+  position: relative;
+}
+
+.category h6 {
+  position: absolute;
+  background-color: #0078ff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 5px;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.blog-caption h2 {
+  font-size: 1.5rem;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.blog-caption h2:hover {
+  color: #0078ff;
+
+}
+
+.footer-img img {
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer-img span {
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.footer-img span:hover {
+  color: #0078ff;
+}
+
+.blog-caption::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* *************contact********************* */
+.contact {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-attachment: fixed;
+}
+
+.contact .layer {
+  background-color: rgb(0, 120, 255, 0.6);
+}
+
+
+.form-contact h2::after,
+.contact-info h2::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+  left: 0;
+}
+
+.contact-info p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.socials i {
+  border: solid 5px #0078ff;
+  border-radius: 50%;
+  padding: 7px 14px;
+  transition: all .5s;
+}
+
+.inst {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.socials i:hover {
+  background-color: #0078ff;
+  color: #fff !important;
+}
+
+.inst:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+/* ***********footer**************** */
+.footer{
+  background-color: #0062d3;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px -15px 15px -20px;
+
+}
